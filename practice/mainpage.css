@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand:hover {
+    color: green;
+}
+
+.nav-link:hover {
+    color: green;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./Image/bus1.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Sections (About, Services, Features, Contact) */
+.section {
+    padding: 60px 20px;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 20px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a,
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    font-size: 20px;
+}
+
+/* Admin Link */
+.admin {
+    color: aliceblue;
+    display: block;
+    margin-top: 10px;
+}
+
+.admin:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.about-content .text-content {
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.about-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .about-content img {
+        max-width: 400px;
+        height: auto;
+    }
+}
